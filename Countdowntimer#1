@@ -1,0 +1,24 @@
+import time
+
+
+print('Pomodotime thing')
+for i in range(4):
+    t = 1*60
+    while t:
+        min = t // 60
+        sec = t % 60
+        timer = '{:02d}:{:02d}'.format(min, sec)
+        print(" " + timer, end = "\r")
+        time.sleep(1)
+        t -= 1
+    print("break")
+    t = 1*30
+    while t:
+        min = t // 60
+        sec = t % 60
+        timer = '{:02d}:{:02d}'.format(min, sec)
+        print(timer, end= "\r")
+        time.sleep(1)
+        t -= 1
+    print("back2work")
+    
