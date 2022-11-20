@@ -1,0 +1,17 @@
+import time
+#how many seconds do I want to count down from?
+t = int(input("how many seconds on this timer? "))
+
+while t:
+    mins = t // 60
+    secs = t % 60
+    timer = "{:02d}:{:02d}".format(mins, secs)
+    print(timer, end="\r")
+    time.sleep(1)
+    t -= 1
+print("time is up, now what?")
+
+#create a while loop so it continuosly counts down until t=0
+
+
+#Calculate the amount of time remaining and print it on the timer
