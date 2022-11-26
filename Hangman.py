@@ -3,7 +3,7 @@ import time
 print("\n welcome to hangman! i stole this code and am using it to learn python\n")
 name = input("Enter your name here! ")  
 print("Hello " + name + ", best of luck, personally I suck at hangman.")
-print("You want to play?\nsLets play.")
+print("You want to play?\nLets play.")
 print("Loading game.")
 time.sleep(1)
 print("Loading game..")
@@ -70,7 +70,7 @@ def hangman():
                   " |    \n"
                   " |    \n"
                   "_|____\n")
-            print("Wrong guess." + str(limit - count) + "guesses remaining\n")
+            print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
             
         elif count == 2:
             time.sleep(1)
